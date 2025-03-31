@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ae360af17e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="MODULOS.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Sidebar Basic Finance</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <aside id="sidebar" class="sidebar">
+        <div class="h-100">
+          <div class="sidebar-logo">
+            <figure class="logo">
+              <img
+                src="/Inicio Basic Finance/img/Logo.png"
+                alt="Logo Empresa"
+              />
+            </figure>
+            <a href="#">Basic Finance</a>
+          </div>
+          <!-- Sidebar Navigation -->
+          <ul class="sidebar-nav">
+            <li class="sidebar-header">Herramientas & Componentes</li>
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link"> Perfil </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link collapsed">
+                <i class="fa-regular fa-file-lines pe-2"></i>
+                Paginas
+              </a>
+              <ul id="pages" class="sidebar-dropdown list-unstyled collapse">
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Analytics</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Ecommerce</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Crypto</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="sidebar-link collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#dashboard"
+                aria-expanded="false"
+                aria-controls="dashboard"
+              >
+                <i class="fa-solid fa-sliders pe-2"></i>
+                Dashboard
+              </a>
+              <ul
+                id="dashboard"
+                class="sidebar-dropdown list-unstyled collapse"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link"> Analisis Dashboard </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Dashboard Ecommerce</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="sidebar-link collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#auth"
+                aria-expanded="false"
+                aria-controls="auth"
+              >
+                <i class="fa-regular fa-user pe-2"></i>
+                Auth
+              </a>
+              <ul
+                id="auth"
+                class="sidebar-dropdown list-unstyled collapse"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Login</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Register</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-header">Multi Level Nav</li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="sidebar-link collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#multi"
+                aria-expanded="false"
+                aria-controls="multi"
+              >
+                <i class="fa-solid fa-share-nodes pe-2"></i>
+                Multi Level
+              </a>
+              <ul
+                id="multi"
+                class="sidebar-dropdown list-unstyled collapse"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a
+                    href="#"
+                    class="sidebar-link collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#multi-two"
+                    aria-expanded="false"
+                    aria-controls="multi-two"
+                  >
+                    Two Links
+                  </a>
+                  <ul
+                    id="multi-two"
+                    class="sidebar-dropdown list-unstyled collapse"
+                  >
+                    <li class="sidebar-item">
+                      <a href="#" class="sidebar-link">Link 1</a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="#" class="sidebar-link">Link 2</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- Main Component -->
+      <div class="main">
+        <nav class="navbar navbar-expand px-3 border-bottom">
+          <!-- Button for sidebar toggle -->
+
+          <button class="btn" type="button">
+            <i class="fa-sharp-duotone fa-solid fa-bars"></i>
+          </button>
+
+          <li>
+            <a href="http://127.0.0.1:5500/finanzas_personales/Opciones.html"
+              >FINANZAS PERSONALES</a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/Finanzas%20Kids/Kids.html"
+              >CUENTA KID</a
+            >
+          </li>
+          <li>
+            <a
+              href="http://127.0.0.1:5500/Modulo%20de%20Inversiones/INVERSIONES.html"
+              >INVERSIONES</a
+            >
+          </li>
+          <li>
+            <a
+              href="http://127.0.0.1:5500/Zona%20Comercial/zona%20comercial.html"
+              >ZONA COMERCIAL</a
+            >
+          </li>
+        </nav>
+        <main>
+          <div class="container">
+            <div class="card">
+              <figure>
+                <img src="img/images.jpeg" alt="" />
+              </figure>
+              <div class="contenido">
+                <h3>CONTROL FINANCIERO</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  ipsum recusandae ea ratione. Fugiat dolorum eius at deleniti,
+                  eaque iure minima voluptatem odit officia labore placeat
+                  dolorem iusto delectus optio.
+                </p>
+                <a href="#">Leer Mas</a>
+              </div>
+            </div>
+            <div class="card">
+              <figure>
+                <img src="img/descarga.jpeg" alt="" />
+              </figure>
+              <div class="contenido">
+                <h3>TU PROGRESO EN METAS</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  ipsum recusandae ea ratione. Fugiat dolorum eius at deleniti,
+                  eaque iure minima voluptatem odit officia labore placeat
+                  dolorem iusto delectus optio.
+                </p>
+                <a href="#">Leer Mas</a>
+              </div>
+            </div>
+            <div class="card">
+              <figure>
+                <img src="img/imp.jpeg" alt="" />
+              </figure>
+              <div class="contenido">
+                <h3>INFORMACION SOBRE IMPUESTOS</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  ipsum recusandae ea ratione. Fugiat dolorum eius at deleniti,
+                  eaque iure minima voluptatem odit officia labore placeat
+                  dolorem iusto delectus optio.
+                </p>
+                <a href="#">Leer Mas</a>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="foot">
+          <section class="sec">
+            <ul class="navlink">
+              <label class="Lista">Productos</label>
+              <li>
+                <a href="http://127.0.0.1:5500/404/404.html"
+                  >¿Poque Basic Finance?</a
+                >
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/404/404.html"
+                  >Aplicacion Movil</a
+                >
+              </li>
+            </ul>
+
+            <ul class="navlink">
+              <label class="Lista">Recursos</label>
+              <li><a href="#">Consejos Sobre como Ahorrar</a></li>
+              <li><a href="#">Articulos e informacion sobre el Mercado</a></li>
+              <li><a href="#">Consejos Sobre Finanzas</a></li>
+            </ul>
+
+            <ul class="navlink">
+              <label class="Lista">Empresa </label>
+              <li><a href="#">Nuestra Historia</a></li>
+              <li><a href="#">Accesibilidad</a></li>
+              <li><a href="#">Eventos</a></li>
+              <li><a href="#">Desarrolladores</a></li>
+            </ul>
+
+            <ul class="navlink">
+              <label class="Lista">Ayuda</label>
+              <li><a href="#">Contactanos</a></li>
+              <li><a href="#">Convenios</a></li>
+              <li><a href="#">Centro de Ayuda</a></li>
+              <li><a href="#">Servicio</a></li>
+            </ul>
+            <ul class="navlink">
+              <label class="Lista">Redes </label>
+              <li>
+                <img src="/ICONOS/Face.svg" class="face" />
+                <a href="https://web.facebook.com/">Facebook</a>
+              </li>
+              <li>
+                <img src="/ICONOS/inst.svg" class="Inst" />
+                <a href="https://www.instagram.com/">Instagram</a>
+              </li>
+              <li>
+                <img src="/ICONOS/X.svg" class="twt" />
+                <a href="https://x.com/">X</a>
+              </li>
+              <li>
+                <img src="/ICONOS/what.svg" class="what" />
+                <a href="https://www.whatsapp.com/?lang=es_LA">Whatsapp</a>
+              </li>
+            </ul>
+          </section>
+        </footer>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
